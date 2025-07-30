@@ -2,7 +2,8 @@ backend:
   name: github
   repo: PhantomProductions501/ArtOfPhantom
   branch: main
-
+  base_url: https://phantomproductions501.github.io
+  auth_endpoint: /ArtOfPhantom/auth
 media_folder: "img/gallery"
 public_folder: "/img/gallery"
 
