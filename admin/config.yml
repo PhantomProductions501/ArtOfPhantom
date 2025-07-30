@@ -4,16 +4,18 @@ backend:
   branch: main
   base_url: https://phantomproductions501.github.io
   auth_endpoint: /ArtOfPhantom/auth
-media_folder: "img/gallery"
-public_folder: "/img/gallery"
+
+media_folder: "img/uploads"        # Carpeta donde se guardan las imágenes
+public_folder: "/img/uploads"      # Ruta pública
+publish_mode: editorial_workflow
 
 collections:
   - name: "gallery"
     label: "Gallery"
-    folder: "_posts"
+    folder: "img/uploads"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text", required: false }
