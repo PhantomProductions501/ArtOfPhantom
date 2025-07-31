@@ -3,7 +3,7 @@ backend:
   repo: PhantomProductions501/ArtOfPhantom
   branch: main
   base_url: https://phantomproductions501.github.io
-  auth_endpoint: /ArtOfPhantom/auth
+  auth_endpoint: /ArtOfPhantom/admin/callback
 
 media_folder: "img/uploads"        # Carpeta donde se guardan las imágenes
 public_folder: "/img/uploads"      # Ruta pública
